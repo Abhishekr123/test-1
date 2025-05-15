@@ -31,7 +31,7 @@ pipeline {
             }
         }
 
-        stage('Containersation'){
+        stage('Containerization'){
             steps{
                 sh '''
                     docker run -it -d --name c3 -p 9003:8080 abhishek12346/project:1
